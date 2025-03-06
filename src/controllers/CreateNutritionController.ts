@@ -7,3 +7,5 @@ class CreateNutritionController{
         reply.send({ message: "rota foi chamada"})
     }
 }
+
+export { CreateNutritionController };
