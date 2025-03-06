@@ -16,7 +16,13 @@ class CreateNutritionController{
         const { name, weight, height, age, gender, objective, level } = request.body as DataProps;
         const createNutrition = new CreateNutritionService();
 
-        const nutrition = await createNutrition.execute();
+        const nutrition = await createNutrition.execute(name, 
+            weight, 
+            height, 
+            age, 
+            gender, 
+            objective, 
+            level);
         reply.send(nutrition)
     }
 }

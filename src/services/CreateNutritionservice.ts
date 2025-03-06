@@ -1,6 +1,6 @@
 import { DataProps } from "../controllers/CreateNutritionController";
 class CreateNutritionService {
-    async execute( name, age, gender, height, level, object, weight){
+    async execute( name, weight, height, age, gender, objective, level){
         console.log("teste")
 
         return { message: "funfou service"}
