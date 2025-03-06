@@ -14,7 +14,7 @@ export async function routes(fastify: FastifyInstance, options: FastifyPluginOpt
         reply.send({ ok: true})
     })
 
-    fastify.get("/create", async (request: FastifyRequest, reply: FastifyReply) => {
+    fastify.post("/", async (request: FastifyRequest, reply: FastifyReply) => {
         return new CreateNutritionController().handle(request, reply)
     })
 }
