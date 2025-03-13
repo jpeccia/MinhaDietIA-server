@@ -18,7 +18,7 @@ const start = async () => {
         await app.listen({ port: 3333, host: "0.0.0.0"})
         console.log(`Servidor rodando`)
     } catch (error) {
-        console.log(err);
+        console.log(error);
     }
 }
 

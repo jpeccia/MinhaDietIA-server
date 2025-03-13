@@ -31,7 +31,7 @@ class CreateNutritionService {
                 return { data: jsonObject}
             }
         } catch (error) {
-            console.error("Erro JSON: ", err)
+            console.error("Erro JSON: ", error)
             throw new Error("Failed to create.")
         }
     }
